@@ -43,13 +43,13 @@ int main() {
                 viewActivities(activities, count);
                 break;
             case 4:
-                //calculateAverageEmissions(activities, count);
+                calculateAverageEmissions(activities, count);
                 break;
             case 5:
-                //resetActivities(&activities, &count);
+                resetActivities(&activities, &count);
                 break;
             case 6:
-                //displayReport(activities, count);
+                displayReport(activities, count);
                 break;
             case 7:
                 printf("Exiting program.\n");
