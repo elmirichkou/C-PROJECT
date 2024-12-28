@@ -1,1 +1,2 @@
-zjhae 55.00 4.00
+Car_Travel 100.00 0.20
+Electricity_Usage 50.00 0.50
