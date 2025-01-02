@@ -1,55 +1,46 @@
-# C-PROJECT
 Carbon Footprint Calculator
-Objective: Calculate a user's carbon footprint based on activities like transport, energy use, and waste.
-Features: Input different activity data (e.g., vehicle type, distance traveled); display total carbon output, add new activity , remove activity.
-Add Activity: Add a new activity with details like type, value, and emission factor.
-Remove Activity: Specify the index of an activity to delete it from the list.
-View Activities: View all activities entered so far.
-Display Report: Show the emissions for each activity and the total emissions.
-Exit: Quit the program.
 
+Overview
 
-PROGRAMME PRINCIPALE : 
-Carbon Footprint Calculator
-1. Add Activity
-2. Remove Activity
-3. View Activities
-4. Calculate Average Emissions Per Activity:
-5-. Reset All Activities
-6. Display Report
-7. Exit
-Choose an option: 3
+The Carbon Footprint Calculator is a simple yet powerful tool designed to help users estimate their carbon emissions based on daily activities. The calculator provides insights into the environmental impact of transportation, energy usage, and waste management, empowering users to make informed decisions to reduce their carbon footprint.
 
-List of Activities:
-----------------------------
+Features
+
+Add Activity: Input details such as activity type, value (e.g., distance, energy consumed), and emission factor.
+Remove Activity: Easily delete specific activities from the list.
+View Activities: Display all entered activities with details like type, value, and emission factor.
+Calculate Average Emissions: Analyze the average emissions per activity to understand the overall impact.
+Reset Activities: Clear all entered data to start fresh without restarting the program.
+Generate Report: View a detailed summary of emissions for each activity and the total carbon output.
+How It Works
+User Input: Enter details about activities such as vehicle type, distance traveled, or energy consumed.
+Calculation: The program uses predefined emission factors to calculate the carbon output for each activity.
+Report Generation: Users can view individual and total emissions in an easy-to-read report.
+
+Example Workflow
+
+1-Add Activities:
+Car Travel: 100.00 km with an emission factor of 0.20 → 20.00 kg CO₂
+Electricity Usage: 50.00 kWh with an emission factor of 0.50 → 25.00 kg CO₂
+
+2-View Activities:
+
 1. Car Travel - Value: 100.00, Emission Factor: 0.20
 2. Electricity Usage - Value: 50.00, Emission Factor: 0.50
-----------------------------
 
-Choose an option: 2
-Enter the index of the activity to remove (1 to 2): 1
-Activity removed successfully.
+3-Remove an Activity:
 
-Choose an option: 4
+Choose activity #1 to remove Car Travel.
 
+4-Generate Report:
 Carbon Footprint Report:
 ----------------------------
-Electricity Usage: 25.00 kg CO2
+Electricity Usage: 25.00 kg CO₂
 ----------------------------
-Total Emissions: 25.00 kg CO2
+Total Emissions: 25.00 kg CO₂
 
+5-Calculate Average Emissions:
+Total Emissions: 75.00 kg CO₂, Activities: 3 → Average: 25.00 kg CO₂ per activity.
 
-1. Calculate Average Emissions Per Activity:
-Add a feature to calculate and display the average emissions per activity. This will help users understand the overall impact of each activity type.
-For example, if the user has 3 activities with total emissions of 75 kg CO₂, the program can calculate the average as 
-75
-÷
-3
-=
-25
- 
-kg CO₂ per activity
-75÷3=25kg CO₂ per activity.
-2. Reset All Activities:
-Allow users to reset the activity list, clearing all entered data. This can be useful if they want to start over without restarting the program.
-Implementing this feature would involve simply resetting the array or list of activities to an empty state.
+6-Reset Activities:
+Clear all data and start fresh.
