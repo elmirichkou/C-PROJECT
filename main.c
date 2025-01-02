@@ -79,7 +79,7 @@ void addActivity(Activity **activities, int *count) {
 
     (*count)++;
 
-    FILE *file = fopen("C:\\Users\miric\Desktop\activities.txt", "a");
+    FILE *file = fopen("activities.txt", "a");
     if (file != NULL) {
         fprintf(file, "%s %.2f %.2f\n", (*activities)[*count - 1].type, (*activities)[*count - 1].value, (*activities)[*count - 1].emission_factor);
         fclose(file);
@@ -117,7 +117,7 @@ void removeActivity(Activity **activities, int *count) {
 
     (*count)--;
 
-    FILE *file = fopen("C:\\Users\miric\Desktop\activities.txt", "w");
+    FILE *file = fopen("activities.txt", "w");
     if (file != NULL) {
         for (int i = 0; i < *count; i++) {
             fprintf(file, "%s %.2f %.2f\n", (*activities)[i].type, (*activities)[i].value, (*activities)[i].emission_factor);
